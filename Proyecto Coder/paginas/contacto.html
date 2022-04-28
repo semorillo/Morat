@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <a class="logo__header" href="../index.html"><img class="logo" src="../Asset/imagenes/logo sin fondo.png" alt="logo"
+        /></a>
+        <!--<a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/instagram icono.jpg" alt="logo instagram"></a>
+          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/face icono.png" alt="logo facebook"></a>
+          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/tweter iconp.jpg" alt="logo twetter"></a>-->
+        <nav>
+          <ul>
+            <li><a class="nav__items" href="../index.html">Inicio</a></li>
+            <li><a class="nav__items" href="./discografia.html">Discografía</a></li>
+            <li><a class="nav__items" href="./productos.html">Merchandising</a></li>
+            <li><a class="nav__items" href="./conciertos.html">Conciertos</a></li>
+            <li><a class="nav__items" href="#">Contactos</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <h1 class="subtitulo">Contacto</h1>
+        <form action="#" method="#">
+            <fieldset class="recuadro__form">
+                
+                <legend class="legend">Informacion Personal</legend>
+                <label for="Informacion_Personal">Nombre y Apellido</label>
+                <input type="text" name="user_name" id="Informacion_Personal" placeholder="Nombre y Apellido">
+                
+                <label for="Informacion_Personal">Teléfono de Contacto</label>
+                <input type="number" name="user_phone" id="Informacion_Personal" placeholder="codigo de area + numero">
+                
+                <label for="Informacion_Personal">Correo de Contacto</label>
+                <input type="emailr" name="user_mail" id="Informacion_Personal" placeholder="ingrese correo electronico">
+            </fieldset>
+            
+            <fieldset class="recuadro__form">
+                
+                <legend class="legend">Tipo de Consulta</legend>
+                
+                <label for="tipo_consulta">Seleccione Tipo de Consulta</label>
+                    <select name="tipo_consulta" id="tipo">
+                        <option value="tipo_consulta">Productos</option>
+                        <option value="tipo_consulta">Conciertos</option>
+                    </select>                
+                    
+                    <textarea name="" id="" cols="30" rows="10" placeholder="ingrese la consulta"></textarea>
+            </fieldset>
+            
+            <fieldset class="recuadro__form">
+                
+                <legend class="legend">Preferencia de respuesta</legend>
+                
+                <input type="radio" name="tipo_respuesta" value="mail">Mail
+                <input type="radio" name="tipo_respuesta" value="mail">Mensaje telefónico
+                
+            </fieldset class="recuadro__form">
+            
+            <input type="submit" placeholder="Enviar">
+            <input type="reset" placeholder="Limpiar campos">
+
+        </form>
+    </main>
+</body>
+</html>

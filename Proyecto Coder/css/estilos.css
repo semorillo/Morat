@@ -123,6 +123,7 @@ main{
 .img1{
     animation-name: cambioImagen;
     animation-duration: 3s;
+    animation-iteration-count: 2;
     
 }
 

@@ -1,0 +1,20 @@
+{
+  "name": "morat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass style.scss ./css/estilos.css -w --no-source-map -s compressed",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semorillo/Morat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semorillo/Morat/issues"
+  },
+  "homepage": "https://github.com/semorillo/Morat#readme"
+}

@@ -2,12 +2,7 @@
 
 @import "./complements/global";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border;
-}
-
+@import "./complements/footer";
 
 h1 {
     font-family: 'Comfortaa', cursive;
@@ -100,6 +95,16 @@ body{
 
 }
 
+.img__integrantes{
+    width: 200px;
+    height: 400px;
+    display: flex;
+}
+
+.datos{
+    display:flex;
+}
+
 /* MAIN */
 main{
     text-align: center;
@@ -142,32 +147,32 @@ main{
 
 
 /* FOOTER */
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    color: antiquewhite;
-    margin-left: 10px;
-    justify-content: space-between;
-}
+// .footer{
+//     display: flex;
+//     flex-wrap: wrap;
+//     background-color: black;
+//     color: antiquewhite;
+//     margin-left: 10px;
+//     justify-content: space-between;
+// }
 
-footer a{
-    display: inline;
-    color: antiquewhite;
-    text-decoration: none;
-    list-style: none;    
+// footer a{
+//     display: inline;
+//     color: antiquewhite;
+//     text-decoration: none;
+//     list-style: none;    
     
-}
+// }
 
-.footer__form{
-    display:flex;
-    justify-content: flex-start;
-}
+// .footer__form{
+//     display:flex;
+//     justify-content: flex-start;
+// }
 
-.footer__links{
-    display: flex;
-    justify-content:flex-end;
-}
+// .footer__links{
+//     display: flex;
+//     justify-content:flex-end;
+// }
 
 /* PAGINA PRODUCTOS */
 
@@ -278,20 +283,20 @@ footer a{
         grid-template-rows: repeat(2, 500px);
         gap: 1rem;
     }
-    .footer{
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
+//     .footer{
+//         flex-direction: column;
+//         align-items: center;
+//         justify-items: center;
+//     }
 
-    .footer__form{
-        flex-direction: column;
-    }
+//     .footer__form{
+//         flex-direction: column;
+//     }
 
-    .footer__links{
-        flex-direction: column;
-    }
-}
+//     .footer__links{
+//         flex-direction: column;
+//     }
+// }
 
 /* Vista Mobile */
 @media screen and (max-width: 600px) {
@@ -352,18 +357,18 @@ footer a{
     
     /* FOOTER */
 
-    .footer{
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
+    // .footer{
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-items: center;
+    // }
 
-    .footer__form{
-        flex-direction: column;
-    }
+    // .footer__form{
+    //     flex-direction: column;
+    // }
 
-    .footer__links{
-        flex-direction: column;
-    }
+    // .footer__links{
+    //     flex-direction: column;
+    // }
 
-}
+    }}

@@ -91,16 +91,17 @@
           </div>
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-              <img src="./Asset/imagenes/Integrantes/sVargas.jpg"alt="imagen de Simon Vargas">
+              <img class= "img__integrantes" src="./Asset/imagenes/Integrantes/sVargas.jpg"alt="imagen de Simon Vargas">
+              <p class="datos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores, odio, molestiae cumque saepe voluptate sequi expedita atque, vitae ut iure. Dolore voluptatibus soluta eligendi labore architecto autem quod porro?</p>
             </div>
             <div class="tab-pane fade" id="v-pills-mvargas" role="tabpanel" aria-labelledby="v-pills-mvargas-tab">
-              <img src="./Asset/imagenes/Integrantes/mMorales.jpg" alt="">
+              <img class= "img__integrantes" src="./Asset/imagenes/Integrantes/mMorales.jpg" alt="imagen de Martín Morales">
             </div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-              <img src="./Asset/imagenes/Integrantes/juanPabloIsaza.jpg" alt="">
+              <img class= "img__integrantes" src="./Asset/imagenes/Integrantes/juanPabloIsaza.jpg" alt="imagen de juan pablo isaza">
             </div>
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-              <img src="./Asset/imagenes/Integrantes/juanPabloVillamil.jpg" alt="">
+              <img class= "img__integrantes" src="./Asset/imagenes/Integrantes/juanPabloVillamil.jpg" alt="imagen de juan pablo villamil">
             </div>
         </div>
         </div>
@@ -108,15 +109,31 @@
     </main>
     
     <footer class="footer">
-      <div class="footer__form">
-        <p>Newsletter</p>
-        <input type="emailr" name="user_mail" id="Informacion_Personal" placeholder="ingrese correo electronico">
-      </div>
-      <div class="footer__links">
-        <a href="">Preguntas Frecuentes</a>
-        <a href="">Politica de Seguridad</a>
-        <a href="">Ayuda</a>
-      </div>
+      <div class="footer_grid">
+        <div class="footer__form">
+          <p>Newsletter</p>
+          <input type="emailr" name="user_mail" id="Informacion_Personal" placeholder="ingrese correo electronico">
+          <input type="submit" placeholder="Enviar">
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Politica de Seguridad</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        </div>
+        <div class="mapa__sitio">
+          <h4>Mapa del Sitio</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./paginas/discografia.html">Discografía</a></li>
+            <li><a href="./paginas/productos.html">Merchandising</a></li>
+            <li><a href="./paginas/conciertos.html">Conciertos</a></li>
+            <li><a href="./paginas/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div> 
+
     </footer>
   </body>
 </html>

@@ -4,35 +4,35 @@
 
 @import "./complements/footer";
 
+@import "./complements/conciertos";
+
 h1 {
     font-family: 'Comfortaa', cursive;
 }
 
 /* HEADER */
 header{
-    background-image: linear-gradient(rgb(255, 179, 0), rgb(145, 112, 19), black, black );
+    background-image: $gradiente;
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
-}
-
-.fa-solid {
-    display: none;
 }
 
 .grid__header{
     display: grid;
     grid-template-columns: 1fr 5fr 0.51fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
     grid-template-areas: 
-        "logo redes car"
-        "logo nav car";
+        "lg redes car"
+        "lg nav mh";
+    
+    align-items: center;
+    justify-items: center;
+    justify-items: stretch;
 }
 
 header li{
     display: flex;
     display: inline;
-    margin: 5px;  
 }
 
 header nav{
@@ -42,25 +42,29 @@ header nav{
 
 .logo{
     width: 100%;
-    grid-area: logo;
-    
+    grid-area:lg;
 }
 
+.menu__mobile{
+    display:none;
+}
 header div{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.logos__redes a{
+.logos__redes {
     grid-area: redes;
-    display: inline;
-    margin: 0.5rem;
+    & a{
+        display: inline;
+        margin: 0.5rem;
+    }
+
 }
 
 .car{
     width: 50%;
-    color: blanchedalmond;
     grid-area: car;
     justify-self: center;
 }
@@ -68,16 +72,17 @@ header div{
     width: 2.5%;
 }
 
-.logo__header{
-    grid-area: logo;
-    justify-content: last baseline;
-}
-
 .nav{
     grid-area: nav;
+    justify-items: center;
     
 }
 
+.menu__mobile{
+    // display:none;
+    grid-area: mh;
+    color: blanchedalmond;
+}
 body{
     font-family: 'Lobster', cursive;
 }
@@ -92,7 +97,32 @@ body{
     list-style: none;
     padding: 5px;
     margin-left: 5px;
+    box-shadow: 1px 1px rgb(203, 175, 50);
 
+}
+
+.grid__index{
+    display: grid;
+    grid-template-columns: 0.3fr, 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+        "e1 e2"
+        "e3 e3";
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel{
+    grid-area: e1;
+}
+
+.historia{
+    grid-area: e2;
+}
+
+.integrantes{
+    grid-template-rows: e3;
 }
 
 .img__integrantes{
@@ -101,19 +131,17 @@ body{
     display: flex;
 }
 
-.datos{
-    display:flex;
+.datos__personales{
+    display: inline;
+}
+
+.integrants{
+    display: flex;
 }
 
 /* MAIN */
 main{
     text-align: center;
-}
-
-.imagen__presentacion{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
 }
 
 .parrafo__comun{
@@ -122,57 +150,18 @@ main{
 }
 
 .subtitulo{
-    background-color: $subtitulo__bgColor;
-    text-align: start;
-    margin: 10px;
+    font-family: 'Comfortaa', cursive;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-style: normal;
+    list-style: none;
+    padding: 5px;
+    margin-left: 5px;
+    box-shadow: 1px 1px rgb(203, 175, 50);
 }
-.img2{
-    display:none;
-}
-.img1{
-    animation-name: cambioImagen;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-    
-}
-
-@keyframes cambioImagen {
-    from{
-      opacity: 1;
-    }
-    to{
-       opacity: 0;
-    }
-}
-
-
-/* FOOTER */
-// .footer{
-//     display: flex;
-//     flex-wrap: wrap;
-//     background-color: black;
-//     color: antiquewhite;
-//     margin-left: 10px;
-//     justify-content: space-between;
-// }
-
-// footer a{
-//     display: inline;
-//     color: antiquewhite;
-//     text-decoration: none;
-//     list-style: none;    
-    
-// }
-
-// .footer__form{
-//     display:flex;
-//     justify-content: flex-start;
-// }
-
-// .footer__links{
-//     display: flex;
-//     justify-content:flex-end;
-// }
 
 /* PAGINA PRODUCTOS */
 
@@ -234,19 +223,50 @@ main{
     color: antiquewhite;
 }
 
-
 /* PAGINA CONTACTO */
-.recuadro__form{
+.formulario__grid{
     background-color: blanchedalmond;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+        "c1 c2 c3"
+        "c4 c4 c4";
+    align-items: start;
+    justify-content: center;
+    & .titulo__form{
+        text-shadow: 2px 2px rgb(224, 220, 31);
+    }
 }
 
-.legend{
-    font-size: 20px;
-    margin: 20px;
+.info__personal{
+    grid-area: c1;
+    margin-left: 40px;
+    margin-right: 40px;
     
 }
+.tipo__consulta{
+    grid-area: c2;
+}
+.preferencia__respuesta{
+    grid-area: c3;
+}
+.botones__form{
+    grid-area: c4;
+}
 
+.botones{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 24px;
+    border-radius: 10px;
+    font-style: normal;
+    padding: 5px;
+    margin-left: 5px;
+    box-shadow: 1px 1px rgb(203, 175, 50);
+}
+
+// PAGINA DISCOGRAFÍA
 .tabla{
     background-color: blanchedalmond;
 }
@@ -283,20 +303,7 @@ main{
         grid-template-rows: repeat(2, 500px);
         gap: 1rem;
     }
-//     .footer{
-//         flex-direction: column;
-//         align-items: center;
-//         justify-items: center;
-//     }
 
-//     .footer__form{
-//         flex-direction: column;
-//     }
-
-//     .footer__links{
-//         flex-direction: column;
-//     }
-// }
 
 /* Vista Mobile */
 @media screen and (max-width: 600px) {
@@ -306,7 +313,7 @@ main{
         grid-auto-rows: auto;
         grid-template-areas: 
             "menu logo1"
-            "menu logo1"  
+            "menu logo1";  
             
     }
     
@@ -319,19 +326,39 @@ main{
         align-self: center;
         
     }
-
+.botones{
+    font-size: 12px;
+}
     .menu__mobile{
         grid-area: menu;
     }
 
-    .imagen__presentacion{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
+     .nav{
+        display: none;
     }
 
-    .nav{
-        display: none;
+    // Menu hamburguesa
+
+    #menu__hamburguesa{
+        position: fixed;
+        top:0;
+        left:0;
+        // height: 100vh;
+        width: 80%;
+        // max-width: 300px;
+
+        // transform: translateX(-10%);
+    }
+    
+    #menu__hamburguesa .nav__items{
+        display: block;
+        margin: 5px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #menu__hamburguesa:target{
+        display: block;
     }
     
     .fa-solid {
@@ -346,7 +373,49 @@ main{
     .car {
         display: none;
     }
-   
+    
+    .formulario__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows:4fr;
+        grid-template-areas: "fila1" "fila2" "fila3" "fila4" ;
+    }
+    .info__personal{
+        grid-area: fila1;
+    }
+    .tipo__consulta{
+        grid-area: fila2;
+    }
+    .preferencia__respuesta{
+        grid-area: fila3;
+    }
+    .botones__form{
+        grid-area: fila4;
+    }
+
+    .footer__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: "f1" "f2" "f3";
+        justify-content: center;
+    }
+
+    .footer__form{
+        grid-area: f1;
+        justify-self: center;
+        
+    }
+    
+    .footer__links{
+        grid-area: f2;
+        justify-self: center;
+    }
+
+    .mapa__sitio{
+        grid-area: f3;
+        justify-self: center;
+        
+    }
 
    /* PAGINA PRODUCTOS */
 
@@ -355,20 +424,5 @@ main{
     grid-template-rows: 500px 500px 500px 500px;
     }
     
-    /* FOOTER */
-
-    // .footer{
-    //     flex-direction: column;
-    //     align-items: center;
-    //     justify-items: center;
-    // }
-
-    // .footer__form{
-    //     flex-direction: column;
-    // }
-
-    // .footer__links{
-    //     flex-direction: column;
-    // }
-
+    
     }}

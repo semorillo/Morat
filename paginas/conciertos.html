@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>conciertos</title>
+    <title>Proximos Conciertos Morat</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,26 +14,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" /> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/fb44d970d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a class="logo__header" href="../index.html"><img class="logo" src="../Asset/imagenes/logo sin fondo.png" alt="logo"
-        /></a>
-        <!--<a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/instagram icono.jpg" alt="logo instagram"></a>
-          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/face icono.png" alt="logo facebook"></a>
-          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/tweter iconp.jpg" alt="logo twetter"></a>-->
-        <nav>
-          <ul>
-            <li><a class="nav__items" href="../index.html">Inicio</a></li>
-            <li><a class="nav__items" href="./discografia.html">Discografía</a></li>
-            <li><a class="nav__items" href="./productos.html">Merchandising</a></li>
-            <li><a class="nav__items" href="#">Conciertos</a></li>
-            <li><a class="nav__items" href="./contacto.html">Contactos</a></li>
-          </ul>
-        </nav>
-      </header>
+    
+    </header>
     <main>
-        <h1 class="subtitulo">Proximos Recitales</h1>
+        <h2 class="subtitulo">Proximos Recitales</h2>
+        <h2 class="subtitulo">Selecciona Continente</h2>
+        <map name="mapa">
+            <area class="norte_america" shape="rect" coords="62,59,539,437" href="" alt="Norte America">
+            <area shape="rect" coords="262,467,537,773" href="" alt="Sur Amenrica">
+            <area shape="rect" coords="592,190,777,322" href="" alt="Europa">
+            <area shape="rect" coords="567,342,835,637" href="" alt="Africa">
+            <area shape="rect" coords="857,87,1330,460" href="" alt="Asia">
+            <area shape="rect" coords="1086,540,1295,685" href="" alt="Australia">
+        </map>
+        <img class="img__mundo" src="../Asset/imagenes/mapamundi.jpg" alt="imagen mapamundi" usemap="#mapa">
+        
     </main>
+
 </body>
 </html>

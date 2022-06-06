@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,64 +14,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" /> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/fb44d970d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a class="logo__header" href="../index.html"><img class="logo" src="../Asset/imagenes/logo sin fondo.png" alt="logo"
-        /></a>
-        <!--<a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/instagram icono.jpg" alt="logo instagram"></a>
-          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/face icono.png" alt="logo facebook"></a>
-          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/tweter iconp.jpg" alt="logo twetter"></a>-->
-        <nav>
-          <ul>
-            <li><a class="nav__items" href="../index.html">Inicio</a></li>
-            <li><a class="nav__items" href="./discografia.html">Discografía</a></li>
-            <li><a class="nav__items" href="./productos.html">Merchandising</a></li>
-            <li><a class="nav__items" href="./conciertos.html">Conciertos</a></li>
-            <li><a class="nav__items" href="#">Contactos</a></li>
-          </ul>
-        </nav>
-      </header>
+        
+    </header>
     <main>
-        <h1 class="subtitulo">Contacto</h1>
-        <form action="#" method="#">
-            <fieldset class="recuadro__form">
-                
-                <legend class="legend">Informacion Personal</legend>
-                <label for="Informacion_Personal">Nombre y Apellido</label>
-                <input type="text" name="user_name" id="Informacion_Personal" placeholder="Nombre y Apellido">
-                
-                <label for="Informacion_Personal">Teléfono de Contacto</label>
-                <input type="number" name="user_phone" id="Informacion_Personal" placeholder="codigo de area + numero">
-                
-                <label for="Informacion_Personal">Correo de Contacto</label>
-                <input type="emailr" name="user_mail" id="Informacion_Personal" placeholder="ingrese correo electronico">
-            </fieldset>
+        <h2 class="subtitulo">Escribinos</h2>
+        <form class="formulario__grid" action="#" method="#">
+            <div class="info__personal">
+                <h3 class="titulo__form">Informacion Personal</h3>
+                <label Class="" for="Informacion_Personal">Nombre y Apellido</label>
+                <input class="" type="text" name="user_name" id="Informacion_Personal" placeholder="Nombre y Apellido">
+                <label class="" for="Informacion_Personal">Teléfono de Contacto</label>
+                <input class=""type="number" name="user_phone" id="Informacion_Personal" placeholder="codigo de area + numero">
+                <label class="" for="Informacion_Personal">Correo de Contacto</label>
+                <input class=""type="emailr" name="user_mail" id="Informacion_Personal" placeholder="ingrese correo electronico">
+            </div>
             
-            <fieldset class="recuadro__form">
-                
-                <legend class="legend">Tipo de Consulta</legend>
-                
-                <label for="tipo_consulta">Seleccione Tipo de Consulta</label>
-                    <select name="tipo_consulta" id="tipo">
-                        <option value="tipo_consulta">Productos</option>
-                        <option value="tipo_consulta">Conciertos</option>
-                    </select>                
-                    
-                    <textarea name="" id="" cols="30" rows="10" placeholder="ingrese la consulta"></textarea>
-            </fieldset>
+            <div class="tipo__consulta">
+                <h3 class="titulo__form">Tipo de Consulta</h3>
+                <label class=""for="tipo_consulta">Seleccione Tipo de Consulta</label>
+                <select class=""name="tipo_consulta" id="tipo">
+                <option value="">Productos</option>
+                <option value="">Conciertos</option>
+                </select>                
+                <textarea class=""name="" id="" cols="30" rows="10" placeholder="ingrese la consulta"></textarea>
+            </div>
             
-            <fieldset class="recuadro__form">
-                
-                <legend class="legend">Preferencia de respuesta</legend>
-                
-                <input type="radio" name="tipo_respuesta" value="mail">Mail
-                <input type="radio" name="tipo_respuesta" value="mail">Mensaje telefónico
-                
-            </fieldset class="recuadro__form">
+            <div class="preferencia__respuesta">
+                <h3 class="legend titulo__form">Preferencia de respuesta</h3>
+                <input class="email"type="radio" name="tipo_respuesta" value="mail">Mail>
+                <input class="msg"type="radio" name="tipo_respuesta" value="mail">Mensaje telefónico
+            </div>
             
-            <input type="submit" placeholder="Enviar">
-            <input type="reset" placeholder="Limpiar campos">
+            <div class="botones__form">
+                <button class="botones" type="submit" placeholder="Enviar">Enviar</button>
+                <button class="botones" type="reset" aria-placeholder="Limpiar Campos">Limpar pantalla</button>
+                <!-- <input class="btn__enviar" type="submit" placeholder="Enviar">
+                <input class="limpiar"type="reset" placeholder="Limpiar campos"> -->
+            </div>
+                       
+            
 
         </form>
     </main>

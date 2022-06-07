@@ -18,90 +18,175 @@
 </head>
 <body>
     <header>
-        <a class="logo__header" href="../index.html"><img class="logo" src="../Asset/imagenes/logo sin fondo.png" alt="logo"
-        /></a>
-        <!--<a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/instagram icono.jpg" alt="logo instagram"></a>
-          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/face icono.png" alt="logo facebook"></a>
-          <a class="logo__redes" href=""><img src="../Proyecto Coder/Asset/imagenes/tweter iconp.jpg" alt="logo twetter"></a>-->
-        <nav>
-          <ul>
-            <li><a class="nav__items" href="../index.html">Inicio</a></li>
-            <li><a class="nav__items" href="#">Discografía</a></li>
-            <li><a class="nav__items" href="./productos.html">Merchandising</a></li>
-            <li><a class="nav__items" href="./conciertos.html">Conciertos</a></li>
-            <li><a class="nav__items" href="./contacto.html">Contactos</a></li>
-          </ul>
-        </nav>
-      </header>
+        <div class="grid__header">
+            <a class="logo__header" href="../index.html"><img class="logo" src="../Asset/imagenes/logo sin fondo.png" alt="logo"
+              /></a>
+                <div class="logos__redes">
+                  <a class="red" href="https://www.instagram.com/morat/?hl=es"><img src="../Asset/imagenes/redes/instagram-square-brands.svg" alt="logo instagram"></a>
+                  <a class="red" href="https://es-la.facebook.com/moratoficial"><img src="../Asset/imagenes/redes/facebook-brands.svg" alt="logo facebook"></a>
+                  <a class="red" href="https://twitter.com/MoratBanda?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../Asset/imagenes/redes/twitter-square-brands.svg" alt="logo twetter"></a>
+                  <a class="red" href="https://www.youtube.com/watch?v=szeA9tvItJY&list=RDEM6bUBzqpSVca__rgQt4BURA&start_radio=1"><img src="../Asset/imagenes/redes/youtube-brands.svg" alt="logo youtube"></a>
+                </div> 
+              <img class="car" src="../Asset/imagenes/cart-shopping-solid.svg" alt="imagen carrito de compras">
+              <a href="#menu__hamburguesa"><i class="fa-solid fa-bars menu__mobile"></i></a>
+                       
+              <nav class="nav" id="menu__hamburguesa">
+                <ul class="nav__lista">
+                  <li><a class="nav__items" href="../index.html">Inicio</a></li>
+                  <li><a class="nav__items" href="#">Discografía</a></li>
+                  <li><a class="nav__items" href="./productos.html">Merchandising</a></li>
+                  <li><a class="nav__items" href="./conciertos.html">Conciertos</a></li>
+                  <li><a class="nav__items" href="./contacto.html">Contactos</a></li>
+                  <li><a class="nav__items salir__ocultar" href="#">Salir</a></li>
+                </ul>
+              </nav>
+          </div>    
+    </header>
     <main>
-        <h2 class="subtitulo">Dicografia</h2>
-        <table class="tabla" border=2 cellspacing=10 cellpadding=10>
-            <tr>
-                <th>DISCO</th>
-                <th>CANCIONES</th>
-                <th>FECHA DE EDICION</th>
-                <th>VIDEO</th>
-            </tr>
-            <br>
-            <tr>
-                <td><img src="../Asset/imagenes/discos/a donde vamos.jpg" alt=""></td>
-                <td>
-                    <ol class="canciones">
-                        <li>A donde vamos</li>
-                        <li>No hay más que hablar</li>
-                        <li>Idiota</li>
-                        <li>Enamorate de alguien mas</li>
-                        <li>Nunca te olvide</li>
-                        <li>De cero</li>
-                        <li>Al aire</li>
-                        <li>No termino</li>
-                    </ol>
-                </td>
-                <td>Año 2021</td>
-                <td><iframe width="800" height="390" src="https://www.youtube.com/embed/dkWSX3gR-fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                
-            </tr>
-            <br>
-             <tr>
-                <td><img src="../Asset/imagenes/discos/ladrona de morat.jpg" alt=""></td>
-                <td>
-                    <ol class="canciones">
-                        <li>Ladrona</li>
-                        <li>Para que nadie se entere</li>
-                        <li>No se</li>
-                        <li>Adios</li>
-                        <li>Yo contigo</li>
-                        <li>Yo mas te adoro</li>
-                        <li>Besos</li>
-                        <li>No te olvido</li>
-                    </ol>
-                </td>
-                <td>Año 2017</td>
-                <td><iframe width="800" height="390" src="https://www.youtube.com/embed/zhVBYFm0-DE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></td>
-
-                
-             </tr>
-             <br>
-             <tr>
-                <td><img src="../Asset/imagenes/discos/tour balas perdidas.jpg" alt=""></td>
-                <td>
-                    <ol class="canciones">
-                        <li>Morir de amor</li>
-                        <li>Preciento</li>
-                        <li>Parece que</li>
-                        <li>Mil tormetas</li>
-                        <li>Mi vida entera</li>
-                        <li>Mi verano</li>
-                        <li>Nadie ve</li>
-                        <li>Balas perdidas</li>
-                    </ol>
-                </td>
-                <td>Año 2015</td>
-                <td><iframe width="800" height="390" src="https://www.youtube.com/embed/o50UZQd5F1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-
-             </tr>
-        </table>
+        <h2 class="subtitulo">Discografia</h2>
+        <div class="container">
+            <div class="card">
+                <span></span>
+                <div class="imgBox"><img class="img__disco" src="../Asset/imagenes/discos/a donde vamos.jpg" alt=""></div>
+                <div class="content">
+                    <div class="info__disco">
+                        <h3>A DONDE VAMOS</h3>
+                        <ol class="canciones lc__aDondeVamos">
+                            <li>A donde vamos</li>
+                            <li>No hay más que hablar</li>
+                            <li>Idiota</li>
+                            <li>Enamorate de alguien mas</li>
+                            <li>Nunca te olvide</li>
+                            <li>De cero</li>
+                            <li>Al aire</li>
+                            <li>No termino</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <span></span>
+                <div class="imgBox"><img class="img__disco" src="../Asset/imagenes/discos/ladrona de morat.jpg" alt=""></div>
+                <div class="content">
+                    <div class="info__disco">
+                        <h3>LADRONA</h3>
+                        <ol class="canciones  lc__ladrona">
+                            <li>Ladrona</li>
+                            <li>Para que nadie se entere</li>
+                            <li>No se</li>
+                            <li>Adios</li>
+                            <li>Yo contigo</li>
+                            <li>Yo mas te adoro</li>
+                            <li>Besos</li>
+                            <li>No te olvido</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <span></span>
+                <div class="imgBox"><img class="img__disco" src="../Asset/imagenes/discos/tour balas perdidas.jpg" alt=""></div>
+                <div class="content">
+                    <div class="info__disco">
+                        <h3>BALAS PERDIDAS</h3>
+                        <ol class="canciones lc__tour">
+                            <li>Morir de amor</li>
+                            <li>Preciento</li>
+                            <li>Parece que</li>
+                            <li>Mil tormetas</li>
+                            <li>Mi vida entera</li>
+                            <li>Mi verano</li>
+                            <li>Nadie ve</li>
+                            <li>Balas perdidas</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><div class="card">
+                <span></span>
+                <div class="imgBox"><img class="img__disco" src="../Asset/imagenes/discos/amor_con_hielo.webp" alt=""></div>
+                <div class="content">
+                    <div class="info__disco">
+                        <h3>LADRONA</h3>
+                        <ol class="canciones lc__amor">
+                            <li>Mil Tormentas</li>
+                            <li>Una vez mas</li>
+                            <li>Ya no estas mas</li>
+                            <li>Cuanto me duele</li>
+                            <li>La íltima vez</li>
+                            <li>Di que no te vas</li>
+                            <li>Yo mas te adoro</li>
+                            <li>En un solo día</li>
+                            <li>Mi nuevo vicio</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                    <span></span>
+                    <div class="imgBox"><img class="img__disco" src="../Asset/imagenes/discos/edicion especial.jpg" alt=""></div>
+                    <div class="content">
+                        <div class="info__disco">
+                            <h3>EDICION ESPECIAL</h3>
+                            <ol class="canciones lc__aDondeVamos">
+                                <li>A donde vamos</li>
+                                <li>No hay más que hablar</li>
+                                <li>Idiota</li>
+                                <li>Enamorate de alguien mas</li>
+                                <li>Nunca te olvide</li>
+                                <li>De cero</li>
+                                <li>Al aire</li>
+                                <li>No termino</li>
+                            </ol>
+                        </div>
+                    </div>
+            </div>
+            <div class="card">
+                <span></span>
+                <div class="imgBox"><img class="img__disco" src="../Asset/imagenes/discos/morat_la-ultima-vez.jpg" alt=""></div>
+                <div class="content">
+                    <div class="info__disco">
+                        <h3>LA ULTIMA VEZ</h3>
+                        <ol class="canciones lc__aDondeVamos">
+                            <li>A donde vamos</li>
+                            <li>No hay más que hablar</li>
+                            <li>Idiota</li>
+                            <li>Enamorate de alguien mas</li>
+                            <li>Nunca te olvide</li>
+                            <li>De cero</li>
+                            <li>Al aire</li>
+                            <li>No termino</li>
+                        </ol>
+                    </div>
+                </div>
+        </div>
+        </div>
     </main>
-    
+    <footer class="footer">
+        <div class="footer__grid">
+          <div class="footer__form">
+            <p class="etiqueta">Newsletter</p>
+            <input type="emailr" name="user_mail" id="Informacion_Personal" placeholder="ingrese correo electronico">
+            <button class="botones" type="submit" placeholder="Enviar">Enviar</button>
+          </div>
+          <div class="footer__links">
+            <ul>
+              <li><a class= "footer__link" href="#">Preguntas Frecuentes</a></li>
+              <li><a class= "footer__link" href="#">Politica de Seguridad</a></li>
+              <li><a class= "footer__link" href="#">Ayuda</a></li>
+            </ul>
+          </div>
+          <div class="mapa__sitio">
+            <h4>Mapa del Sitio</h4>
+            <ul>
+              <li><a class= "footer__link" href="../index.html">Inicio</a></li>
+              <li><a class= "footer__link" href="#">Discografía</a></li>
+              <li><a class= "footer__link" href="./productos.html">Merchandising</a></li>
+              <li><a class= "footer__link" href="./conciertos.html">Conciertos</a></li>
+              <li><a class= "footer__link" href="./contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div> 
+  
+      </footer>
 </body>
 </html>

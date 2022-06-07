@@ -6,6 +6,9 @@
 
 @import "./complements/conciertos";
 
+@import "./complements/discografia";
+
+
 h1 {
     font-family: 'Comfortaa', cursive;
 }
@@ -100,6 +103,9 @@ body{
     box-shadow: 1px 1px rgb(203, 175, 50);
 
 }
+.salir__ocultar{
+    display:none;
+}
 
 .grid__index{
     display: grid;
@@ -150,17 +156,16 @@ main{
 }
 
 .subtitulo{
-    font-family: 'Comfortaa', cursive;
     background-color: black;
     color: antiquewhite;
     font-size: 2rem;
     text-decoration: none;
     border-radius: 10px;
-    font-style: normal;
     list-style: none;
     padding: 5px;
     margin-left: 5px;
-    box-shadow: 1px 1px rgb(203, 175, 50);
+    box-shadow: 2px 2px rgb(203, 175, 50);
+    margin-top: 10px;
 }
 
 /* PAGINA PRODUCTOS */
@@ -258,7 +263,7 @@ main{
 .botones{
     background-color: black;
     color: antiquewhite;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 10px;
     font-style: normal;
     padding: 5px;
@@ -333,21 +338,18 @@ main{
         grid-area: menu;
     }
 
-     .nav{
-        display: none;
-    }
-
-    // Menu hamburguesa
+   // Menu hamburguesa
 
     #menu__hamburguesa{
         position: fixed;
         top:0;
         left:0;
-        // height: 100vh;
+        z-index: 1000;
+        height: 100vh;
         width: 80%;
-        // max-width: 300px;
-
-        // transform: translateX(-10%);
+        max-width: 300px;
+        transform: translateX(-100%);
+        transition: transform 0,5s;
     }
     
     #menu__hamburguesa .nav__items{
@@ -358,7 +360,7 @@ main{
     }
 
     #menu__hamburguesa:target{
-        display: block;
+        transform: translateX(0);
     }
     
     .fa-solid {

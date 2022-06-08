@@ -48,7 +48,7 @@ header nav{
     grid-area:lg;
 }
 
-.menu__mobile{
+.fa-solid {
     display:none;
 }
 header div{
@@ -82,7 +82,7 @@ header div{
 }
 
 .menu__mobile{
-    // display:none;
+    display:none;
     grid-area: mh;
     color: blanchedalmond;
 }
@@ -107,43 +107,45 @@ body{
     display:none;
 }
 
-.grid__index{
-    display: grid;
-    grid-template-columns: 0.3fr, 2fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: 
-        "e1 e2"
-        "e3 e3";
-    gap: 1rem;
+.container__integrantes{
+    width: 100%;
+    max-width: 1300px;
+    height: 350x;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    margin:auto;
 }
-
-.carrusel{
-    grid-area: e1;
-}
-
-.historia{
-    grid-area: e2;
-}
-
-.integrantes{
-    grid-template-rows: e3;
+.container_integrantes .card__integrantes{
+    width: 320px;
+    height: 330px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
 }
 
 .img__integrantes{
-    width: 200px;
-    height: 400px;
-    display: flex;
+    width: 300px;
+    height: 300px;
 }
 
-.datos__personales{
-    display: inline;
+.container_integrantes .card__integrantes:hover{
+    transform: translateY(-15px);
+    box-shadow: 0, 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.integrants{
-    display: flex;
+.container__integrantes .card__integrantes h4{
+    font-weight: 600;
 }
+.container__integrantes .card__integrantes p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300px;
+}
+
 
 /* MAIN */
 main{
@@ -174,40 +176,65 @@ main{
     display:grid;
     gap: 0.5rem;
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 500px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-        "p1 p2 p3"
-        "p4 p5 p6"
+        "p1 p2 p3 p4"
+        "p5 p6 p7 p8"
+        "p9 p10 p11 p12";
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.productos pBufanda{
+.P1{
     grid-area: p1;
 }
 
-.productos pBuzo{
+.P2{
     grid-area: p2;
 }
 
-.productos pCombo{
+.P3{
     grid-area: p3;
 }
 
-.productos pRemera__mujer{
+.P4{
     grid-area: p4;
+}
+.P5{
+    grid-area: p5;
+}
+
+.P6{
+    grid-area: p6;
+}
+
+.P7{
+    grid-area: p7;
+}
+
+.P8{
+    grid-area: p8;
+}
+.P9{
+    grid-area: p9;
 }
 .productos{
     background-color:blanchedalmond;
     color: black;
     text-align: center;
     border-radius: 20px;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 2px 2px grey;
+    transition: all 2s;
 }
 
 .imagen__producto{
-    width: 65%;
+    width: 224px;
+    height: 224px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .productos img:hover{
@@ -282,6 +309,7 @@ main{
 }
 
 /* Vista Tablet */
+
 @media screen and (max-width: 1024px) {
     
     .nav__items{
@@ -303,11 +331,63 @@ main{
     /* PAGINA PRODUCTOS */
    
     .grid__tarjetas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "c1 c2" 
+        "c3 c4"
+        "c5 c6" 
+        "c7 c8"
+        "c9 c10";
+        justify-content: center;
+        align-items: center;
+        }
+        .P1{
+            grid-area: c1;
+        }
         
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 500px);
-        gap: 1rem;
+        .P2{
+            grid-area: c2;
+        }
+        
+        .P3{
+            grid-area: c3;
+        }
+        
+        .P4{
+            grid-area: c4;
+        }
+        .P5{
+            grid-area: c5;
+        }
+        
+        .P6{
+            grid-area: c6;
+        }
+        
+        .P7{
+            grid-area: c7;
+        }
+        
+        .P8{
+            grid-area: c8;
+        }
+        .P9{
+            grid-area: c9;
+        }
+        
+// PAGINA PRODUCTOS
+
+     .img__mundo{
+        width: 600px;
     }
+    .continente{
+        display:none;
+    }
+    .mapa1{
+        display:none;
+    }
+}
 
 
 /* Vista Mobile */
@@ -336,6 +416,7 @@ main{
 }
     .menu__mobile{
         grid-area: menu;
+        
     }
 
    // Menu hamburguesa
@@ -345,20 +426,26 @@ main{
         top:0;
         left:0;
         z-index: 1000;
-        height: 100vh;
-        width: 80%;
+        height: 10vh;
+        width: 50%;
         max-width: 300px;
         transform: translateX(-100%);
         transition: transform 0,5s;
+        text-decoration: none;
+        
     }
     
     #menu__hamburguesa .nav__items{
         display: block;
         margin: 5px;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content:center;
+        align-items:flex-start;
+        
     }
 
+    .hamburguesa{
+        text-decoration: none;
+    }
     #menu__hamburguesa:target{
         transform: translateX(0);
     }
@@ -423,8 +510,64 @@ main{
 
    .grid__tarjetas{
     grid-template-columns: 1fr;
-    grid-template-rows: 500px 500px 500px 500px;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "c1" 
+    "c2"
+    "c3" 
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8"
+    "c9";
+    justify-content: center;
+    align-items: center;
+    }
+
+    .P1{
+        grid-area: c1;
     }
     
+    .P2{
+        grid-area: c2;
+    }
     
-    }}
+    .P3{
+        grid-area: c3;
+    }
+    
+    .P4{
+        grid-area: c4;
+    }
+    .P5{
+        grid-area: c5;
+    }
+    
+    .P6{
+        grid-area: c6;
+    }
+    
+    .P7{
+        grid-area: c7;
+    }
+    
+    .P8{
+        grid-area: c8;
+    }
+    .P9{
+        grid-area: c9;
+    }
+    
+    // PAGINA PRODUCTOS
+
+    .img__mundo{
+        width: 300px;
+    }
+    .continente{
+        display:none;
+    }
+    .mapa1{
+        display:none;
+    }
+}

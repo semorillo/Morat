@@ -43,16 +43,142 @@
     </header>
     <main>
         <h2 class="subtitulo">Proximos Recitales</h2>
-        <h2 class="subtitulo">Selecciona Continente</h2>
-        <map name="mapa">
-            <area class="norte_america" shape="rect" coords="62,59,539,437" href="" alt="Norte America">
-            <area shape="rect" coords="262,467,537,773" href="" alt="Sur Amenrica">
-            <area shape="rect" coords="592,190,777,322" href="" alt="Europa">
-            <area shape="rect" coords="567,342,835,637" href="" alt="Africa">
-            <area shape="rect" coords="857,87,1330,460" href="" alt="Asia">
-            <area shape="rect" coords="1086,540,1295,685" href="" alt="Australia">
+        <h2 class="continente">Selecciona Continente</h2>
+        <map class="mapa1" name="mapa">
+            <area class="norte_america" shape="rect" coords="62,59,539,437" href="#norte_america" alt="Norte America">
+            <area shape="rect" coords="262,467,537,773" href="#sur__america" alt="Sur Amenrica">
+            <area shape="rect" coords="592,190,777,322" href="#europa" alt="Europa">
+            <area shape="rect" coords="567,342,835,637" href="#africa" alt="Africa">
+            <area shape="rect" coords="857,87,1330,460" href="#asia" alt="Asia">
+            <area shape="rect" coords="1086,540,1295,685" href="#australia" alt="Australia">
         </map>
         <img class="img__mundo" src="../Asset/imagenes/mapamundi.jpg" alt="imagen mapamundi" usemap="#mapa">
+<!-- NORTE AMERICA -->
+        <h2 class="subtitulo" id="norte_america">Norte America</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Lugar</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Comprar Entrada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-warning">12 Julio 2022</td>
+              <td class="table-warning">Los Angeles</td>
+              <td class="table-warning">u$s  100</td>
+              <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+            <tr>
+              <th>27 Julio 2022</th>
+              <td>Nueva York</td>
+              <td>u$s  100</td>
+              <td><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+            <tr>
+              <th class="table-warning">31 de Julio 2022</th>
+              <td class="table-warning">Miami</td>
+              <td class="table-warning"> u$s  100</td>
+              <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+          </tbody>
+        </table>
+<!-- SUR AMERICA -->
+        <h2 class="subtitulo" id="sur__america">Sur America</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Lugar</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Comprar Entrada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-warning">03 Agosto 2022</td>
+              <td class="table-warning">Buenos Aires</td>
+              <td class="table-warning"> $  1000 </td>
+              <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+            <tr>
+              <th>10 Agosto 2022</th>
+              <td>Mendoza - Argentina</td>
+              <td> $  1000 </td>
+              <td><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+            <tr>
+              <th class="table-warning">17 Agosto 2022</th>
+              <td class="table-warning">Cordoba - Agentina</td>
+              <td class="table-warning"> $  1000 </td>
+              <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+          </tbody>
+          <tr>
+            <th>30 Agosto 2022</th>
+            <td> Monterrey - Mexico</td>
+            <td> $  1000 </td>
+            <td><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+          </tr>
+          <tr>
+            <th class="table-warning"> 10 Septiembre 2022</th>
+            <td class="table-warning"> Cancun - Mexico</td>
+            <td class="table-warning"> $  1000 </td>
+            <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+          </tr>
+        </table>
+<!-- EUROPA -->
+        <h2 class="subtitulo" id="europa">Europa</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Lugar</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Comprar Entrada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-warning">30 Septiembre 2022</td>
+              <td class="table-warning">Barcelona - España</td>
+              <td class="table-warning"> eur 20 </td>
+              <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+            <tr>
+              <th>03 Octubre 2022</th>
+              <td>Sevilla - España</td>
+              <td> eur 20 </td>
+              <td><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+            <tr>
+              <th class="table-warning">15 Octubre 2022</th>
+              <td class="table-warning">Madrid - España</td>
+              <td class="table-warning"> $  1000 </td>
+              <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+            </tr>
+          </tbody>
+          <tr>
+            <th>16 Octubre 2022</th>
+            <td> Madrid - España</td>
+            <td> eur 20 </td>
+            <td><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+          </tr>
+          <tr>
+            <th class="table-warning"> 20 Octubre 2022</th>
+            <td class="table-warning"> Paris - Francia</td>
+            <td class="table-warning"> eur 20 </td>
+            <td class="table-warning"><button class="botones" type="submit" placeholder="Enviar">Comprar</button></td>
+          </tr>
+        </table>
+        <h2 class="subtitulo" id="africa">Africa</h2>
+        <h4 class="proxi">PROXIMAMENTE</h4>
+        <h2 class="subtitulo" id="asia">Asia</h2>
+        <h4 class="proxi">PROXIMAMENTE</h4>
+        <h2 class="subtitulo" id="australia">Australia</h2>
+        <h4 class="proxi">PROXIMAMENTE</h4>
         
     </main>
     <footer class="footer">
